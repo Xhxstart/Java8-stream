@@ -39,21 +39,21 @@ public class webapitest {
 		studentlist.add(new Student("B","NAME3",8));
 		studentlist.add(new Student("C","NAME2",8));
 		studentlist.add(new Student("C","NAME43",4));
-		/*studentlist.stream().sorted()
+		studentlist.stream()
 				.collect(Collectors.groupingBy(Student::getClassname,
 				Collectors.maxBy(Comparator.comparingInt(Student::getAge)))).forEach(
 				(k,v)->{System.out.println("クラス名:"+k.toString()+"学生名:"+v.get().getName()+","+v.get().getAge());
-				});*/
+				});
 		
 		//6、をクラス名降順、年齢昇順で抽出し、「クラス名　+　”　:　”　+ 　学生名　+　”　:　”　+ 　年齢」
 		//のフォーマットでプリントしてください。
-		System.out.println(Math.sqrt(9));
+/*		System.out.println(Math.sqrt(9));
 		studentlist.stream()
 		.sorted(Comparator.comparingInt(Student::getAge))
 		.sorted((a,b) -> b.getClassname().compareTo(a.getClassname()))
 		.collect(Collectors.toList()).forEach(
-				x->{System.out.println(x.getClassname()+"age:"+x.getAge());
-		});
+				x->{System.out.println("クラス名:"+x.getClassname()+"age:"+x.getAge());
+		});*/
 		       
 	}
     private static boolean test(int minValue, int[] arr) {

@@ -60,11 +60,9 @@ public class jsontest {
 		 * ObjectMapper mapper = new ObjectMapper();
 		 * 
 		 * JavaType javaType =
-		 * mapper.getTypeFactory().constructParametricType(List.class,
-		 * JsonData.class); //如果是Map类型
-		 * mapper.getTypeFactory().constructParametricType
-		 * (HashMap.class,String.class, Bean.class); List<JsonData> lst =
-		 * (List<JsonData>)mapper.readValue(file, javaType);
+		 * mapper.getTypeFactory().constructParametricType(List.class,JsonData.class); //如果是Map类型
+		 * mapper.getTypeFactory().constructParametricType(HashMap.class,String.class, Bean.class); 
+		 * List<JsonData> lst =　(List<JsonData>)mapper.readValue(file, javaType);
 		 */
 		System.out.println(postresult);
 	}
